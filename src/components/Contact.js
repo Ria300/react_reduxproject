@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+
 class Contact extends Component{
    constructor(props){
        super(props);
@@ -25,13 +26,13 @@ class Contact extends Component{
         }
         else{
         return(
-<div>
+            <div>
     <ul>
-
         {items.map(items=>(
-<li key={items.id}>
-  Name: {items.name}
+<li className="list" key={items.id}>
+ Name: {items.name} <br/>
   Email:{items.email} 
+  <br/><br/>
 </li>
         ))}
     </ul>
